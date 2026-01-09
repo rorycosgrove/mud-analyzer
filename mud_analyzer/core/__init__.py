@@ -1,0 +1,1 @@
+"""Core world data access and lookup functionality"""

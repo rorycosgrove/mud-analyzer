@@ -1,0 +1,6327 @@
+{
+  "count": 668,
+  "format": "addictmud-spell-lookup-v1",
+  "spells": {
+    "0": {
+      "name": "RESERVED",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "1": {
+      "name": "armor",
+      "sources": [
+        "spell_affect"
+      ],
+      "symbols": [
+        "SPELL_ARMOR"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "10": {
+      "name": "color spray",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "100": {
+      "name": "ice storm",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "101": {
+      "name": "conjure elemental",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "102": {
+      "name": "slay",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "103": {
+      "name": "word of death",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "105": {
+      "name": "locate traps",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "106": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "unused106",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_UNUSED106"
+      ]
+    },
+    "107": {
+      "name": "preserve corpse",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "108": {
+      "name": "unholy armor",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "109": {
+      "name": "flame blade",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "11": {
+      "name": "control weather",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "110": {
+      "name": "dexterity",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "111": {
+      "name": "ray of enfeeblement",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "112": {
+      "name": "minor create",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "113": {
+      "name": "fire storm",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "114": {
+      "name": "fireshield",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "116": {
+      "name": "find familiar",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "117": {
+      "name": "explosive cloud",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "118": {
+      "name": "goodberry",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "119": {
+      "name": "holy word",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "12": {
+      "name": "create food",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "120": {
+      "name": "unholy word",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "122": {
+      "name": "meteor swarm",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "123": {
+      "name": "dust devil",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "124": {
+      "name": "trace",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "125": {
+      "name": "vigorize",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "126": {
+      "name": "forbiddance",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "127": {
+      "name": "sticks to snakes",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "129": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "unused129",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_UNUSED129"
+      ]
+    },
+    "13": {
+      "name": "create water",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "130": {
+      "name": "claw",
+      "sources": [
+        "spell_affect"
+      ],
+      "symbols": [
+        "SPELL_CLAW"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "131": {
+      "name": "blackwand ws",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "132": {
+      "name": "mute",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "133": {
+      "name": "spell immunity",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "134": {
+      "name": "waterbreathe",
+      "sources": [
+        "spell_affect"
+      ],
+      "symbols": [
+        "SPELL_WATERBREATHE"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "135": {
+      "name": "cone of cold",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "136": {
+      "name": "chain lightning",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "137": {
+      "name": "lloyds beacon",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "138": {
+      "name": "dispel magic",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "14": {
+      "name": "cure blind",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "140": {
+      "name": "illusion",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "141": {
+      "name": "globe of darkness",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "143": {
+      "name": "copy",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "145": {
+      "name": "mirror image",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "146": {
+      "name": "scare",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "148": {
+      "name": "armor of undeath",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "149": {
+      "name": "forget",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "15": {
+      "name": "cure critic",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "151": {
+      "name": "mass calm",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "154": {
+      "name": "suggestion",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "155": {
+      "name": "fission bomb",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "156": {
+      "name": "atomic blast",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "157": {
+      "name": "thermonuclear holocaust",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "158": {
+      "name": "suffocate",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "159": {
+      "name": "gate one",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "16": {
+      "name": "cure light",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "160": {
+      "name": "gate two",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "161": {
+      "name": "gate three",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "162": {
+      "name": "protection from good",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "163": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "wild shield",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WILD_SHIELD"
+      ]
+    },
+    "164": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "wild eyes",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WILD_EYES"
+      ]
+    },
+    "165": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "wild cure",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WILD_CURE"
+      ]
+    },
+    "166": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "wild aura",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WILD_AURA"
+      ]
+    },
+    "167": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "wild haste",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WILD_HASTE"
+      ]
+    },
+    "168": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "wild inspire",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WILD_INSPIRE"
+      ]
+    },
+    "169": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "wild heal",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WILD_HEAL"
+      ]
+    },
+    "17": {
+      "name": "curse",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "170": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "wild enchant",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WILD_ENCHANT"
+      ]
+    },
+    "171": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "wild fire",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WILD_FIRE"
+      ]
+    },
+    "172": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "wild ice",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WILD_ICE"
+      ]
+    },
+    "173": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "spiritualize",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_SPIRITUALIZE"
+      ]
+    },
+    "174": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "cannibalize",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_CANNIBALIZE"
+      ]
+    },
+    "175": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "wild ride",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WILD_RIDE"
+      ]
+    },
+    "18": {
+      "name": "detect alignment",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "180": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "unused180",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_UNUSED180"
+      ]
+    },
+    "181": {
+      "name": "slow poison",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "182": {
+      "name": "cause light",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "183": {
+      "name": "antimagic zone",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "184": {
+      "name": "tranquility",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "185": {
+      "name": "cone of silence",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "186": {
+      "name": "paralysis",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "187": {
+      "name": "rotting flesh",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "188": {
+      "name": "rapid healing",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "189": {
+      "name": "pack regeneration",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "19": {
+      "name": "detect invisibility",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "190": {
+      "name": "rapid assault",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "191": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "zombie form",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_ZOMBIE_FORM"
+      ]
+    },
+    "192": {
+      "name": "ensnare",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "193": {
+      "name": "thorn spray",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "194": {
+      "name": "test fireball",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "195": {
+      "name": "heat blood",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "196": {
+      "name": "ws heat blood",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "197": {
+      "name": "boil blood",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "198": {
+      "name": "ws boil blood",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "199": {
+      "name": "frost strike",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "2": {
+      "name": "teleport",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "20": {
+      "name": "detect magic",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "200": {
+      "name": "ws frost strike",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "2000": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "armor perl tests",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_ARMOR_PERL_TESTS"
+      ]
+    },
+    "201": {
+      "name": "blizzard blast",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "202": {
+      "name": "ws blizzard blast",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "203": {
+      "name": "whirling wind",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "204": {
+      "name": "ws whirling wind",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "205": {
+      "name": "dizzying wind",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "206": {
+      "name": "ws dizzying wind",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "208": {
+      "name": "harm good",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "209": {
+      "name": "harm evil",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "21": {
+      "name": "detect poison",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "210": {
+      "name": "group bless",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "212": {
+      "name": "endurance",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "213": {
+      "name": "holy encouragement",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "215": {
+      "name": "readiness",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "216": {
+      "name": "flame weapon",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "217": {
+      "name": "frost weapon",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "218": {
+      "name": "electrify weapon",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "219": {
+      "name": "misdirection",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "22": {
+      "name": "dispel evil",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "22000": {
+      "name": "racial innates",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "228": {
+      "name": "cavorting bones",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "229": {
+      "name": "leering corpse",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "23": {
+      "name": "earthquake",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "230": {
+      "name": "bone walk",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "231": {
+      "name": "convoke shadow",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "232": {
+      "name": "restless bones",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "233": {
+      "name": "haunting corpse",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "238": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "demilich",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_DEMILICH"
+      ]
+    },
+    "239": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "lich",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_LICH"
+      ]
+    },
+    "23985": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "mass charm undead",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_MASS_CHARM_UNDEAD"
+      ]
+    },
+    "23986": {
+      "name": "undead immunity",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "23987": {
+      "name": "pzar maximus",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "23988": {
+      "name": "water spout",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "23989": {
+      "name": "shadow ball",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "23990": {
+      "name": "shadow whip",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "23991": {
+      "name": "dart",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "23992": {
+      "name": "sand form",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "23993": {
+      "name": "flame of death",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "23994": {
+      "name": "winters embrace",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "23995": {
+      "name": "flame flux",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "23996": {
+      "name": "electric shock",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "23997": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "throw room",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_THROW_ROOM"
+      ]
+    },
+    "23998": {
+      "name": "entropy",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "24": {
+      "name": "enchant weapon",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "241": {
+      "name": "shadow bolt",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "242": {
+      "name": "deadeye",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "244": {
+      "name": "word of shadow",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "245": {
+      "name": "confusion",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "246": {
+      "name": "psionic forget",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "247": {
+      "name": "psionic relocate",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "248": {
+      "name": "aura sight",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "25": {
+      "name": "energy drain",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "251": {
+      "name": "object reading",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "255": {
+      "name": "combat mind",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "256": {
+      "name": "danger sense",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "259": {
+      "name": "hear light",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "26": {
+      "name": "fireball",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "261": {
+      "name": "know location",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "262": {
+      "name": "poison sense",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "265": {
+      "name": "spirit sense",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "267": {
+      "name": "detonate",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "268": {
+      "name": "psionic disintegrate",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "27": {
+      "name": "harm",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "270": {
+      "name": "project force",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "274": {
+      "name": "ballistic attack",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "28": {
+      "name": "heal",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "282": {
+      "name": "levitation",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "287": {
+      "name": "complete healing",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "288": {
+      "name": "death field",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "29": {
+      "name": "invisibility",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "290": {
+      "name": "life draining",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "294": {
+      "name": "adrenaline control",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "295": {
+      "name": "aging",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "296": {
+      "name": "biofeedback",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "297": {
+      "name": "body control",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "3": {
+      "name": "bless",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "30": {
+      "name": "lightning bolt",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "302": {
+      "name": "cell adjustment",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "303": {
+      "name": "chameleon power",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "305": {
+      "name": "displacement",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "306": {
+      "name": "double pain",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "308": {
+      "name": "enhanced strength",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "31": {
+      "name": "locate object",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "310": {
+      "name": "flesh armor",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "314": {
+      "name": "lend health",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "315": {
+      "name": "mind over body",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "32": {
+      "name": "magic missile",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "322": {
+      "name": "psionic teleport",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "323": {
+      "name": "psionic tele other",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "328": {
+      "name": "teleport trigger",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "33": {
+      "name": "poison",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "331": {
+      "name": "domination",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "334": {
+      "name": "mass domination",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "338": {
+      "name": "psychic crush",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "34": {
+      "name": "protection from evil",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "341": {
+      "name": "tower of iron will",
+      "sources": [
+        "spell_affect"
+      ],
+      "symbols": [
+        "PSI_TOWER_OF_IRON_WILL"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "344": {
+      "name": "awe",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "346": {
+      "name": "contact",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "35": {
+      "name": "remove curse",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "358": {
+      "name": "psionic invisible",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "359": {
+      "name": "life detection",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "36": {
+      "name": "sanctuary",
+      "sources": [
+        "spell_affect"
+      ],
+      "symbols": [
+        "SPELL_SANCTUARY"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "361": {
+      "name": "mind bar",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "37": {
+      "name": "shocking grasp",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "38": {
+      "name": "sleep",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "384": {
+      "name": "ultrablast",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "385": {
+      "name": "cannibalize",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "39": {
+      "name": "strength",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "392": {
+      "name": "psionic inflation",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "395": {
+      "name": "receptacle",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "4": {
+      "name": "blindness",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "40": {
+      "name": "summon",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "401": {
+      "name": "backstab",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "402": {
+      "name": "bash",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "403": {
+      "name": "hide",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "404": {
+      "name": "kick",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "405": {
+      "name": "pick lock",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "406": {
+      "name": "punch",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "407": {
+      "name": "rescue",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "408": {
+      "name": "sneak",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "409": {
+      "name": "steal",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "410": {
+      "name": "track",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "411": {
+      "name": "stab",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "412": {
+      "name": "circle",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "413": {
+      "name": "pummel",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "414": {
+      "name": "grapple",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "415": {
+      "name": "craft",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "416": {
+      "name": "berserk",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "417": {
+      "name": "stun touch",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "418": {
+      "name": "block",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "419": {
+      "name": "tackle",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "42": {
+      "name": "word of recall",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "420": {
+      "name": "hurl",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "421": {
+      "name": "sweep",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "422": {
+      "name": "throw",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "423": {
+      "name": "brew",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "424": {
+      "name": "inset",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "425": {
+      "name": "disassemble",
+      "sources": [
+        "skill"
+      ],
+      "symbols": [
+        "SKILL_DISASSEMBLE"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "426": {
+      "name": "disarm trap",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "427": {
+      "name": "find trap",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "428": {
+      "name": "dual wield",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "429": {
+      "name": "switch opponents",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "43": {
+      "name": "remove poison",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "430": {
+      "name": "smokebomb",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "431": {
+      "name": "reflection",
+      "sources": [
+        "skill_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "433": {
+      "name": "frenzy",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "434": {
+      "name": "negate sanctuary",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "435": {
+      "name": "quickdraw",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "436": {
+      "name": "knowhistory",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "438": {
+      "name": "detect noise",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "439": {
+      "name": "eagleclaw",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "44": {
+      "name": "sense life",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "440": {
+      "name": "ironfist",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "441": {
+      "name": "assassinate",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "442": {
+      "name": "meditate",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "443": {
+      "name": "barehand attack",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "444": {
+      "name": "retreat",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "445": {
+      "name": "scribe",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "446": {
+      "name": "trip",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "447": {
+      "name": "sign",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "449": {
+      "name": "repair",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "45": {
+      "name": "animate dead",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "450": {
+      "name": "dodge",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "46": {
+      "name": "dispel good",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "47": {
+      "name": "group armor",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "477": {
+      "name": "shadow storm",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "48": {
+      "name": "group heal",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "480": {
+      "name": "death blade",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "481": {
+      "name": "chilling embrace",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "482": {
+      "name": "festering tumors",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "484": {
+      "name": "succession of shadows",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "485": {
+      "name": "shard spray",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "486": {
+      "name": "debilitating pain",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "487": {
+      "name": "shadow touch",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "488": {
+      "name": "soul evacuation",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "49": {
+      "name": "group recall",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "492": {
+      "name": "shroud of agony",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "493": {
+      "name": "sacrificial heart",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "496": {
+      "name": "vampyric curse",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "497": {
+      "name": "scent of shadow",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "498": {
+      "name": "shadow creep",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "499": {
+      "name": "bile spew",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "5": {
+      "name": "burning hands",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "50": {
+      "name": "infravision",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "503": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "envenomed bolt",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_ENVENOMED_BOLT"
+      ]
+    },
+    "504": {
+      "name": "shackle of bone",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "505": {
+      "name": "bloodstorm",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "507": {
+      "name": "gift of essence",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "509": {
+      "name": "grim feast",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "51": {
+      "name": "waterwalk",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "510": {
+      "name": "allure of death",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "511": {
+      "name": "nethergaze",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "512": {
+      "name": "word of souls",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "514": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "asytole",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_ASYTOLE"
+      ]
+    },
+    "515": {
+      "name": "mirages of death",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "516": {
+      "name": "blackflame",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "517": {
+      "name": "siphon strength",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "518": {
+      "name": "stop healing",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "519": {
+      "name": "theft of energy",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "52": {
+      "name": "relocate",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "522": {
+      "name": "ward undead",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "525": {
+      "name": "doomwail",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "529": {
+      "name": "venom of the snake",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "53": {
+      "name": "succor",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "530": {
+      "name": "dark flames",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "532": {
+      "name": "scent of darkness",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "535": {
+      "name": "eclipse",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "536": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "infectious cloud",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_INFECTIOUS_CLOUD"
+      ]
+    },
+    "537": {
+      "name": "heal the dead",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "539": {
+      "name": "theft of vigor",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "54": {
+      "name": "vampyric touch",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "540": {
+      "name": "ghostdweomer",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "541": {
+      "name": "gift of force",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "543": {
+      "name": "funeral pyre",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "544": {
+      "name": "augmentation of death",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "547": {
+      "name": "condemned",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "549": {
+      "name": "enhance power",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "55": {
+      "name": "rainbow",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "552": {
+      "name": "blood rite",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "555": {
+      "name": "succofshad neg affect",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "556": {
+      "name": "mind wrack",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "557": {
+      "name": "holy armor",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "558": {
+      "name": "holy blessing",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "559": {
+      "name": "recover sight",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "56": {
+      "name": "mana",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "560": {
+      "name": "holy aura",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "561": {
+      "name": "thunder of karana",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "562": {
+      "name": "valor of marr",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "563": {
+      "name": "holy sense",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "564": {
+      "name": "holy sight",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "565": {
+      "name": "divine strength",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "566": {
+      "name": "holy strength",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "567": {
+      "name": "frenzied strength",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "568": {
+      "name": "power of the gods",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "57": {
+      "name": "cause serious",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "571": {
+      "name": "flash of light",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "572": {
+      "name": "call of the holy",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "573": {
+      "name": "holy evil away",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "574": {
+      "name": "holy helper",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "575": {
+      "name": "shield of the gods",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "576": {
+      "name": "potion throw",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "577": {
+      "name": "undead protection",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "578": {
+      "name": "divine purpose",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "579": {
+      "name": "invis to undead",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "58": {
+      "name": "aid",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "580": {
+      "name": "holy return",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "581": {
+      "name": "divine favor",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "582": {
+      "name": "dismiss undead",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "583": {
+      "name": "bash boost",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "584": {
+      "name": "bash force",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "585": {
+      "name": "bash magnify",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "586": {
+      "name": "sense undead",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "587": {
+      "name": "lesser healing",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "589": {
+      "name": "greater healing",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "59": {
+      "name": "enchant armor",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "590": {
+      "name": "flame of light",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "591": {
+      "name": "expulse undead",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "594": {
+      "name": "smite",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "595": {
+      "name": "yaulp",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "596": {
+      "name": "divine vigor",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "597": {
+      "name": "pacify",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "598": {
+      "name": "endure magic",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "599": {
+      "name": "instrument of nife",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "6": {
+      "name": "call lightning",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "60": {
+      "name": "group invisibility",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "600": {
+      "name": "enstill",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "601": {
+      "name": "identify",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_NOMORT"
+      ]
+    },
+    "607": {
+      "name": "phoenix spirit",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_NOMORT"
+      ]
+    },
+    "608": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "mana increase",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_MANA_INCREASE"
+      ]
+    },
+    "609": {
+      "name": "sunbeam",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "61": {
+      "name": "group infravision",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "611": {
+      "name": "resolution",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "613": {
+      "name": "hand of justice",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "615": {
+      "name": "cloak of righteousness",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "616": {
+      "name": "holy dissipation",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "618": {
+      "name": "crush",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "62": {
+      "name": "haste",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "621": {
+      "name": "groin",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "622": {
+      "name": "bluff",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "627": {
+      "name": "toughness",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "628": {
+      "name": "unholy blessing",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "629": {
+      "name": "unholy sense",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "63": {
+      "name": "flesh golem",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "632": {
+      "name": "affliction",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "633": {
+      "name": "unholy return",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "634": {
+      "name": "unholy strength",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "635": {
+      "name": "darkest call",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "636": {
+      "name": "unholy good be gone",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "638": {
+      "name": "banishment",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "639": {
+      "name": "unholy aura",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "64": {
+      "name": "petrification",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "640": {
+      "name": "dark vigor",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "641": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "desolution",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_DESOLUTION"
+      ]
+    },
+    "642": {
+      "name": "flame of darkness",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "643": {
+      "name": "breath of darkness",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "644": {
+      "name": "evil touch",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "645": {
+      "name": "sense the living",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "646": {
+      "name": "dark strength",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "647": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "unholy dissapation",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_UNHOLY_DISSAPATION"
+      ]
+    },
+    "648": {
+      "name": "invisible to living",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "649": {
+      "name": "magical impotence",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "65": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "spectral hand",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_SPECTRAL_HAND"
+      ]
+    },
+    "650": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "unholy helper",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_UNHOLY_HELPER"
+      ]
+    },
+    "651": {
+      "name": "ungodly shield",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "652": {
+      "name": "fortress of hate",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "653": {
+      "name": "unholy aid",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "654": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "strength of hate",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_STRENGTH_OF_HATE"
+      ]
+    },
+    "655": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "first of doom",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_FIRST_OF_DOOM"
+      ]
+    },
+    "656": {
+      "name": "divine darkness",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "658": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "dark valor",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_DARK_VALOR"
+      ]
+    },
+    "659": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "nightly tangle",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_NIGHTLY_TANGLE"
+      ]
+    },
+    "66": {
+      "name": "restore",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "660": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "darkest strength",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_DARKEST_STRENGTH"
+      ]
+    },
+    "661": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "inflict pain",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_INFLICT_PAIN"
+      ]
+    },
+    "662": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "dismiss living",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_DISMISS_LIVING"
+      ]
+    },
+    "663": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "decay",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_DECAY"
+      ]
+    },
+    "664": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "overwhelm",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_OVERWHELM"
+      ]
+    },
+    "666": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "chilled aura",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_CHILLED_AURA"
+      ]
+    },
+    "667": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "malice",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_MALICE"
+      ]
+    },
+    "668": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "hand of spite",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_HAND_OF_SPITE"
+      ]
+    },
+    "669": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "unholy wrath",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_UNHOLY_WRATH"
+      ]
+    },
+    "67": {
+      "name": "stone skin",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "670": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "dark force",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_DARK_FORCE"
+      ]
+    },
+    "671": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "unholy cloud",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_UNHOLY_CLOUD"
+      ]
+    },
+    "672": {
+      "name": "cure wounds",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "673": {
+      "name": "mystical shield",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "674": {
+      "name": "return sight",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "675": {
+      "name": "sense the hidden",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "676": {
+      "name": "quick sober",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "677": {
+      "name": "harmony",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "678": {
+      "name": "blessed chance",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "679": {
+      "name": "deaths direction",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "68": {
+      "name": "summon shadow",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "680": {
+      "name": "blessed warmth",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "681": {
+      "name": "wave of fear",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "682": {
+      "name": "lessen poison",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "684": {
+      "name": "helping hand",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "686": {
+      "name": "age reversal",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "687": {
+      "name": "float",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "688": {
+      "name": "wizening",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "69": {
+      "name": "create light",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "691": {
+      "name": "strike",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "692": {
+      "name": "bravery",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "693": {
+      "name": "heroic bond",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "694": {
+      "name": "miscast magic",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "695": {
+      "name": "cure poison",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "696": {
+      "name": "furor",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "697": {
+      "name": "hammer of wrath",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "698": {
+      "name": "death pact",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "699": {
+      "name": "force",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "7": {
+      "name": "charm person",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "70": {
+      "name": "create spring",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "700": {
+      "name": "expend",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "702": {
+      "name": "steelskin",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "705": {
+      "name": "firefly",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "709": {
+      "name": "all seeing eye",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "71": {
+      "name": "recharge",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "710": {
+      "name": "augmentation one",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "711": {
+      "name": "augmentation two",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "712": {
+      "name": "augmentation three",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "715": {
+      "name": "akheva",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "717": {
+      "name": "spirit armor",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "718": {
+      "name": "earthen grasp",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "719": {
+      "name": "freedom",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "72": {
+      "name": "faerie fire",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "720": {
+      "name": "weaken",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "721": {
+      "name": "blood burst",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "723": {
+      "name": "acid splash",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "724": {
+      "name": "pyrocursor",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "725": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "circle of force",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_CIRCLE_OF_FORCE"
+      ]
+    },
+    "726": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "blackfire",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_BLACKFIRE"
+      ]
+    },
+    "727": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "pebble to boulder",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_PEBBLE_TO_BOULDER"
+      ]
+    },
+    "728": {
+      "name": "death fog",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "729": {
+      "name": "horrid wilting",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "73": {
+      "name": "faerie fog",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "730": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "energy maelstorm",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_ENERGY_MAELSTORM"
+      ]
+    },
+    "731": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "anarchy",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_ANARCHY"
+      ]
+    },
+    "732": {
+      "name": "conjure earth elemental",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "733": {
+      "name": "conjure fire elemental",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "734": {
+      "name": "conjure air elemental",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "735": {
+      "name": "conjure water elemental",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "736": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "mob convocation one",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_MOB_CONVOCATION_ONE"
+      ]
+    },
+    "737": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "mob convocation two",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_MOB_CONVOCATION_TWO"
+      ]
+    },
+    "738": {
+      "name": "ensorcellment",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "739": {
+      "name": "minor malison",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "74": {
+      "name": "fly",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "740": {
+      "name": "absorb mana",
+      "sources": [
+        "spell_affect"
+      ],
+      "symbols": [
+        "SPELL_ABSORB_MANA"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "741": {
+      "name": "taper enchantment",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "742": {
+      "name": "mellon collie",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "743": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "wandering mind",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WANDERING_MIND"
+      ]
+    },
+    "744": {
+      "name": "gift of magic",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "745": {
+      "name": "arcane tome",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "746": {
+      "name": "plasma ball",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "747": {
+      "name": "second attack",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "749": {
+      "name": "poison blade",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "75": {
+      "name": "shield",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "750": {
+      "name": "mug",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "751": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "lock",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_LOCK"
+      ]
+    },
+    "752": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "slip",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_SLIP"
+      ]
+    },
+    "753": {
+      "name": "brainbonk",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "754": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "befuddle",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_BEFUDDLE"
+      ]
+    },
+    "757": {
+      "name": "multiple stab",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "758": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "find path",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_FIND_PATH"
+      ]
+    },
+    "759": {
+      "name": "doublebarrel backstab",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "76": {
+      "name": "weakness",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "760": {
+      "name": "spinesever",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "761": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "unused761",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_UNUSED761"
+      ]
+    },
+    "762": {
+      "name": "hayate",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "763": {
+      "name": "detatch",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "764": {
+      "name": "fortitude",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "765": {
+      "name": "call to arms",
+      "sources": [
+        "skill_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "766": {
+      "name": "battle cry",
+      "sources": [
+        "skill_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "767": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "elemental toughness",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_ELEMENTAL_TOUGHNESS"
+      ]
+    },
+    "768": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "mud",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_MUD"
+      ]
+    },
+    "769": {
+      "name": "furious defense",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "77": {
+      "name": "disintegrate",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "770": {
+      "name": "symbol of transal",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "771": {
+      "name": "spit",
+      "sources": [
+        "skill_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "773": {
+      "name": "adrenalize",
+      "sources": [
+        "skill_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "774": {
+      "name": "upheaval",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "775": {
+      "name": "uppercut",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "776": {
+      "name": "alacrity",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "777": {
+      "name": "zantetsu",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "778": {
+      "name": "encouragement",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "779": {
+      "name": "dismiss summoned",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "78": {
+      "name": "cause critic",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "780": {
+      "name": "eye gouge",
+      "sources": [
+        "skill_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "781": {
+      "name": "force of nature",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "782": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "stopspell",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_STOPSPELL"
+      ]
+    },
+    "783": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "shatter",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_SHATTER"
+      ]
+    },
+    "784": {
+      "name": "group vigorize",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "785": {
+      "name": "clear mind",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "788": {
+      "name": "feed",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "789": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "batform",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_BATFORM"
+      ]
+    },
+    "79": {
+      "name": "chaos",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "790": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "wolfform",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WOLFFORM"
+      ]
+    },
+    "792": {
+      "name": "drain to receptacle",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "796": {
+      "name": "benediction",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "797": {
+      "name": "conceal alignment",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "8": {
+      "name": "chill touch",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "80": {
+      "name": "close portal",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "800": {
+      "name": "magic aura",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "801": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "waypoint",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WAYPOINT"
+      ]
+    },
+    "802": {
+      "name": "power word kill",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "803": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "incendiary cloud",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_INCENDIARY_CLOUD"
+      ]
+    },
+    "804": {
+      "name": "burrowing bony digits",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "808": {
+      "name": "leech field",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "81": {
+      "name": "magical burst",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "810": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "glittering robe",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_GLITTERING_ROBE"
+      ]
+    },
+    "811": {
+      "name": "major create",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "812": {
+      "name": "group summon",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "813": {
+      "name": "blood weapon",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "814": {
+      "name": "ws blood weapon",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "815": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "earth plane portal",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_EARTH_PLANE_PORTAL"
+      ]
+    },
+    "816": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "earth plane teleport",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_EARTH_PLANE_TELEPORT"
+      ]
+    },
+    "817": {
+      "name": "air plane portal",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "818": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "air plane teleport",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_AIR_PLANE_TELEPORT"
+      ]
+    },
+    "819": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "fire plane portal",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_FIRE_PLANE_PORTAL"
+      ]
+    },
+    "82": {
+      "name": "slow",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "820": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "fire plane teleport",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_FIRE_PLANE_TELEPORT"
+      ]
+    },
+    "821": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "water plane portal",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WATER_PLANE_PORTAL"
+      ]
+    },
+    "822": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "water plane teleport",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_WATER_PLANE_TELEPORT"
+      ]
+    },
+    "823": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "shadow plane portal",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_SHADOW_PLANE_PORTAL"
+      ]
+    },
+    "824": {
+      "name": "shadow plane teleport",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "825": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "astral plane portal",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_ASTRAL_PLANE_PORTAL"
+      ]
+    },
+    "826": {
+      "name": "astral plane teleport",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "827": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "planar portal",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_PLANAR_PORTAL"
+      ]
+    },
+    "828": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "planar teleport",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_PLANAR_TELEPORT"
+      ]
+    },
+    "829": {
+      "name": "attack bonus one",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "83": {
+      "name": "dispel sanc",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "830": {
+      "name": "attack bonus two",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "831": {
+      "name": "attack bonus three",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "832": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "demonic flesh",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_DEMONIC_FLESH"
+      ]
+    },
+    "833": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "unused833",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_UNUSED833"
+      ]
+    },
+    "834": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "agony",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_AGONY"
+      ]
+    },
+    "835": {
+      "name": "dark fury",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "836": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "soul leech",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_SOUL_LEECH"
+      ]
+    },
+    "838": {
+      "name": "poisonproof",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "839": {
+      "name": "essenceburn",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "84": {
+      "name": "calm",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "840": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "sacrifice",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_SACRIFICE"
+      ]
+    },
+    "85": {
+      "name": "information",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "86": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "unsued86",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_UNSUED86"
+      ]
+    },
+    "864": {
+      "name": "remove invis",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "865": {
+      "name": "forage",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "866": {
+      "name": "gamblers ruin one",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "867": {
+      "name": "gamblers ruin two",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "868": {
+      "name": "gamblers ruin three",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "869": {
+      "name": "eyepoke",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "87": {
+      "name": "enhance damage",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "870": {
+      "name": "hoax",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "871": {
+      "name": "gut",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "872": {
+      "name": "identify weakness",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "873": {
+      "name": "feign death",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "874": {
+      "name": "fire dagger",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "875": {
+      "name": "gamblers ruin",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "876": {
+      "name": "rogues shadow",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "877": {
+      "name": "ectoplasmic key",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "878": {
+      "name": "mental blast",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "879": {
+      "name": "psychic blast",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "88": {
+      "name": "inspire",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "880": {
+      "name": "mental surge",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "881": {
+      "name": "mind wipe",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "882": {
+      "name": "dementia",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "883": {
+      "name": "expanding mind",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "884": {
+      "name": "physical illusion",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "885": {
+      "name": "magical illusion",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "886": {
+      "name": "mental illusion",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_POWER"
+      ]
+    },
+    "887": {
+      "name": "power regen one",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "888": {
+      "name": "power regen two",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "889": {
+      "name": "power regen three",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "89": {
+      "name": "firefountain",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "890": {
+      "name": "crusaders might one",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "891": {
+      "name": "crusaders might two",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "892": {
+      "name": "crusaders might three",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "893": {
+      "name": "mighty blessing",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "894": {
+      "name": "purification",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "895": {
+      "name": "sacrifice",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "896": {
+      "name": "healers prayer",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "897": {
+      "name": "divine refresh",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "898": {
+      "name": "shield swing",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "899": {
+      "name": "doublestrike",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "9": {
+      "name": "lifeblood",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "90": {
+      "name": "portal",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "900": {
+      "name": "knights protection one",
+      "sources": [
+        "skill_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "901": {
+      "name": "knights protection two",
+      "sources": [
+        "skill_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "902": {
+      "name": "knights protection three",
+      "sources": [
+        "skill_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "903": {
+      "name": "maidens blessing",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "904": {
+      "name": "dragon slayer",
+      "sources": [
+        "skill_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "905": {
+      "name": "chivalry",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "906": {
+      "name": "heroic scream",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "907": {
+      "name": "gallantry",
+      "sources": [
+        "skill_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "908": {
+      "name": "arthurs gift",
+      "sources": [
+        "skill_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "909": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "kinetic absorb",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_KINETIC_ABSORB"
+      ]
+    },
+    "91": {
+      "name": "fire fall",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "910": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "kinetic healing",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_KINETIC_HEALING"
+      ]
+    },
+    "911": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "kinetic power",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_KINETIC_POWER"
+      ]
+    },
+    "912": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "kinetic psychics",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_KINETIC_PSYCHICS"
+      ]
+    },
+    "913": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "kinetic movement",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_KINETIC_MOVEMENT"
+      ]
+    },
+    "914": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "kinetic stats",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_KINETIC_STATS"
+      ]
+    },
+    "915": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "kinetic damage",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_KINETIC_DAMAGE"
+      ]
+    },
+    "916": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "kinetic hitroll",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_KINETIC_HITROLL"
+      ]
+    },
+    "917": {
+      "kinds": [
+        "skill"
+      ],
+      "name": "kinetic force",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SKILL_KINETIC_FORCE"
+      ]
+    },
+    "918": {
+      "name": "vampyric anguish",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "919": {
+      "name": "decaying entrails",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "92": {
+      "name": "sorrow",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "920": {
+      "name": "necrosis",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "921": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "dracolich",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_DRACOLICH"
+      ]
+    },
+    "922": {
+      "kinds": [
+        "spell"
+      ],
+      "name": "skeleton form",
+      "sources": [
+        "macro"
+      ],
+      "symbols": [
+        "SPELL_SKELETON_FORM"
+      ]
+    },
+    "923": {
+      "name": "siphon life",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "924": {
+      "name": "manaskin",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "925": {
+      "name": "avasculate",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "926": {
+      "name": "blade of pain",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "927": {
+      "name": "scribe one",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "928": {
+      "name": "scribe two",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "929": {
+      "name": "scribe three",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "93": {
+      "name": "intensify summoning",
+      "sources": [
+        "spell_affect"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "930": {
+      "name": "scribe four",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "931": {
+      "name": "scribe five",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "932": {
+      "name": "scribe six",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "933": {
+      "name": "scribe grant",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "934": {
+      "name": "scribe penalty",
+      "sources": [
+        "spell_affect"
+      ],
+      "symbols": [
+        "SKILL_SCRIBE_PENALTY"
+      ],
+      "types": [
+        "SKILL_TYPE_SKILL"
+      ]
+    },
+    "94": {
+      "name": "aerial servant",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "95": {
+      "name": "flamestrike",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "96": {
+      "name": "monsum one",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "97": {
+      "name": "monsum two",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "98": {
+      "name": "monsum three",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    },
+    "99": {
+      "name": "fireblast",
+      "sources": [
+        "skill"
+      ],
+      "types": [
+        "SKILL_TYPE_SPELL"
+      ]
+    }
+  }
+}
