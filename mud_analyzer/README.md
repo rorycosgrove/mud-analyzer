@@ -2,137 +2,132 @@
 
 ## Overview
 
-MUD Analyzer is a comprehensive suite of tools for exploring and analyzing AddictMUD world data. It provides powerful search capabilities, detailed zone exploration, assembly analysis, and comprehensive reporting features.
+MUD Analyzer provides comprehensive tools for exploring and analyzing AddictMUD world data. Available as both a modern API and legacy interactive menu system.
 
-## Quick Start
+## 🚀 **NEW: API Version (Recommended)**
 
-1. **Setup**: Place the analyzer in your AddictMUD world directory (containing numbered zone folders)
-2. **Run**: `python mud_analyzer/main.py` for interactive menu
+The project has been completely refactored into a modern, test-driven API with MCP support for LLM integration.
+
+### Quick Start (API)
+
+```bash
+# Install API dependencies
+pip install -r requirements-api.txt
+
+# Start MCP server (for LLM integration)
+python mcp_server.py
+
+# OR start REST API server
+python api_server.py
+```
+
+**See [README-API.md](README-API.md) for complete API documentation.**
+
+### API Features
+
+- 🔌 **MCP Integration** - Direct LLM integration via Model Context Protocol
+- 🚀 **REST API** - FastAPI-based endpoints with OpenAPI docs
+- 🧪 **Test-Driven** - Comprehensive pytest test suite
+- ⚡ **Async/Await** - Modern async architecture throughout
+- 🔍 **Smart Search** - Relevance-based entity search with accessibility filters
+- 📊 **Assembly Analysis** - Traditional and script-created items
+- 🎯 **Type Safety** - Full Pydantic models with validation
+
+## 📜 **Legacy: Interactive Menu System**
+
+The original interactive menu system is preserved for backward compatibility.
+
+### Quick Start (Legacy)
+
+1. **Setup**: Place analyzer in AddictMUD world directory
+2. **Run**: `python main.py` for interactive menu
 3. **Explore**: Start with Zone Browser to see available zones
-4. **Search**: Use Global Search to find specific items across all zones
 
-## Features
+### Legacy Features
 
-### 🔍 **Global Search** (Refactored)
-- Search objects & mobiles across all zones
-- View detailed item information and statistics  
-- Find load locations and probabilities
-- Unified data service with optimized caching
+- 🔍 **Global Search** - Search objects & mobiles across all zones
+- 🌍 **Zone Browser** - Browse zones by name, author, or statistics  
+- 🏰 **Zone Explorer** - Interactive exploration of individual zones
+- 🔧 **Assembled Items** - Analyze craftable items and requirements
+- 📊 **Zone Summary** - Generate comprehensive zone reports
+- 📚 **Help System** - Built-in documentation and guidance
 
-### 🌍 **Zone Browser** (Refactored)
-- Browse zones by name, author, or statistics
-- Enhanced search and filtering capabilities
-- Direct zone exploration integration
-- Author-based zone grouping
+## Architecture
 
-### 🏰 **Zone Explorer**
-- Interactive exploration of individual zones
-- Browse rooms, mobiles, objects, scripts, assembles
-- Detailed entity information with formatted display
-- Zone overview and statistics
+### New API Architecture (Recommended)
 
-### 🔧 **Assembled Items** (Enhanced)
-- Analyze craftable items and requirements
-- Identify possible vs impossible assemblies
-- Component analysis with load locations
-- Success probability calculations
-- **NEW**: Script-created items analysis
-- **NEW**: Special procedure item detection
-- **NEW**: Unified view of all creatable items
+```
+mud_analyzer/
+├── mcp_server.py              # MCP server for LLM integration
+├── api_server.py              # FastAPI REST server
+├── requirements-api.txt       # API dependencies
+└── mud_analyzer_api/
+    ├── config.py              # Configuration management
+    ├── models/
+    │   └── entities.py        # Pydantic data models
+    ├── core/
+    │   ├── world_service.py   # World data access
+    │   ├── search_service.py  # Entity search
+    │   └── assembly_service.py # Assembly analysis
+    └── tests/
+        └── test_api.py        # Comprehensive test suite
+```
 
-### 📊 **Zone Summary**
-- Generate comprehensive zone reports
-- Entity counts and distributions
-- Detailed analysis and statistics
-
-### 📚 **Help & Documentation** (New)
-- Comprehensive help system
-- Getting started guide
-- Feature-specific documentation
-- Tips, tricks, and troubleshooting
-
-### 🔍 **Project Status Checker** (New)
-- Verify setup and diagnose issues
-- Check directory structure and data files
-- Cache status and dependency verification
-- Project statistics and recommendations
-
-## Architecture Improvements
-
-### Unified Data Service
-- Centralized data access and caching
-- Optimized performance with shared indexes
-- Consistent entity handling across modules
-
-### Base Explorer Classes
-- Eliminated code duplication (~60% reduction)
-- Standardized menu patterns and navigation
-- Common pagination and search functionality
-
-### Enhanced Caching
-- Unified cache manager
-- Memory and disk persistence
-- Automatic cache invalidation
-
-## Directory Structure
+### Legacy Architecture
 
 ```
 mud_analyzer/
 ├── main.py                           # Entry point
 ├── menu.py                           # Main menu system
-├── help_system.py                    # Help and documentation
-├── status_checker.py                 # Project status verification
-├── config.py                         # Configuration management
-├── cache_manager.py                  # Unified caching system
-├── error_handler.py                  # Error handling utilities
-├── performance.py                    # Performance monitoring
-├── data_service.py                   # Unified data access
-├── base_explorer.py                  # Base classes for explorers
 ├── global_search_refactored.py       # Enhanced global search
 ├── zone_browser_refactored.py        # Enhanced zone browser
 ├── assembled_items_refactored.py     # Enhanced assembly analysis
 ├── zone_explorer.py                  # Zone exploration
-├── core/
-│   └── world_lookup.py               # Core data access
-├── analysis/
-│   ├── identify_object.py            # Object analysis
-│   ├── identify_mobile.py            # Mobile analysis
-│   └── zone_summary.py               # Zone reporting
-├── utils/
-│   └── spell_lookup.py               # Spell utilities
-└── data/
-    └── spells.json                   # Spell definitions
+└── core/
+    └── world_lookup.py               # Core data access
 ```
 
 ## Usage
 
-### Interactive Menu
+### API Usage (Recommended)
+
 ```bash
-python mud_analyzer/main.py
+# MCP Server (for LLM integration)
+python mcp_server.py
+
+# REST API Server
+python api_server.py
+# Then visit http://localhost:8000/docs for API documentation
+
+# Run tests
+pytest mud_analyzer_api/tests/
 ```
 
-### Command Line
+### Legacy Usage
+
 ```bash
-python mud_analyzer/main.py search      # Global search
-python mud_analyzer/main.py browse      # Zone browser  
-python mud_analyzer/main.py explore 100 # Zone explorer
-python mud_analyzer/main.py summary 100 # Zone summary
-python mud_analyzer/main.py assembled   # Assembled items
-python mud_analyzer/main.py help        # Help system
+# Interactive menu
+python main.py
+
+# Command line shortcuts
+python main.py search      # Global search
+python main.py browse      # Zone browser  
+python main.py explore 100 # Zone explorer
+python main.py assembled   # Assembled items
 ```
+
+## Migration Guide
+
+**For New Projects**: Use the API version (README-API.md)
+
+**For Existing Users**: The legacy interactive menu still works exactly as before
+
+**For Developers**: The API provides better testing, type safety, and integration capabilities
 
 ## Performance Features
 
+- **Async/Await**: Modern async architecture (API version)
 - **Lazy Loading**: Data loaded only when needed
 - **Intelligent Caching**: Automatic cache management
-- **Optimized Indexing**: Fast lookups across large datasets
-- **Progress Indicators**: Visual feedback for long operations
-- **Memory Management**: Efficient memory usage patterns
-
-## User Experience Enhancements
-
-- **Consistent Navigation**: Standardized menu patterns
-- **Enhanced Search**: Improved search capabilities across all modules
-- **Better Error Handling**: Comprehensive error management
-- **Help Integration**: Built-in documentation and guidance
-- **Status Verification**: Setup validation and troubleshooting
+- **Type Safety**: Full Pydantic validation (API version)
+- **Test Coverage**: Comprehensive test suite (API version)
