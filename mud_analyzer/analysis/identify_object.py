@@ -203,6 +203,18 @@ def identify_type_specific(obj: Dict[str, Any], spell_map: Dict[int, str]) -> Li
         lines.append(f"It has {v1} maximum charge(s) and {v2} remaining.")
     elif t == 1:  # Light
         lines.append("Hours left: [Infinite]" if v2 == -1 else f"Hours left: [{v2}]")
+    elif t == 15:  # Container
+        lines.append(f"Can hold {v0} items with a maximum weight of {v3}.")
+        if v1 & 1:  # Closeable
+            lines.append("This container can be closed.")
+        if v1 & 2:  # Pickproof
+            lines.append("This container is pickproof.")
+        if v1 & 4:  # Closed
+            lines.append("This container is currently closed.")
+        if v1 & 8:  # Locked
+            lines.append("This container is currently locked.")
+        if v2 > 0:  # Key vnum
+            lines.append(f"Key required: {v2}")
     elif t == 17:  # Liquid Container
         drink = DRINKS[v2] if 0 <= v2 < len(DRINKS) and DRINKS[v2] != "\n" else f"Unknown({v2})"
         lines.append(f"Can hold {v0} drink units.")
@@ -219,6 +231,24 @@ def identify_type_specific(obj: Dict[str, Any], spell_map: Dict[int, str]) -> Li
     elif t == 41:  # Event Scroll
         ev = PLAYER_EVENT_NAMES[v0] if 0 <= v0 < len(PLAYER_EVENT_NAMES) and PLAYER_EVENT_NAMES[v0] != "\n" else f"Unknown({v0})"
         lines.append(f"This scroll activates 5 minutes of {ev}")
+    elif t == 19:  # Food
+        lines.append(f"This food will fill you up by {v0} hours.")
+        if v1 > 0:
+            lines.append(f"This food is poisoned (poison level: {v1}).")
+    elif t == 14:  # Trap
+        lines.append(f"Trap type: {v0}, Damage: {v1}, Charges: {v2}")
+    elif t == 22:  # Boat
+        lines.append("This item allows water travel.")
+    elif t == 23:  # Fountain
+        drink = DRINKS[v2] if 0 <= v2 < len(DRINKS) and DRINKS[v2] != "\n" else f"Unknown({v2})"
+        lines.append(f"This fountain contains {drink}.")
+        lines.append(f"Drink units available: {v1}")
+    elif t == 24:  # Portal
+        lines.append(f"This portal leads to room {v0}.")
+        if v1 > 0:
+            lines.append(f"Portal key required: {v1}")
+        if v2 > 0:
+            lines.append(f"Portal has {v2} charges remaining.")
     elif t == 37:  # Mana Spike
         lines.append("Currently owned by somebody." if v0 > 0 else "This mana spike is not owned by anybody.")
 

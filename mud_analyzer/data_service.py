@@ -196,15 +196,91 @@ class DataService:
                 results.extend(entities)
             except Exception:
                 continue
-    def search_entities(self, entity_type: str, search_term: str) -> List[EntityInfo]:
+    def search_entities(self, entity_type: str, search_term: str, accessible_only: bool = False) -> List[EntityInfo]:
         """Search entities by name"""
         entities = self.get_entities(entity_type)
         search_term = search_term.lower()
         
-        return [
+        results = [
             entity for entity in entities.values()
             if search_term in entity.name.lower()
         ]
+        
+        if accessible_only:
+            results = [entity for entity in results if self.is_entity_accessible(entity)]
+        
+        return results
+    
+    def is_entity_accessible(self, entity: EntityInfo) -> bool:
+        """Check if an entity is accessible in the game"""
+        if entity.entity_type == "object":
+            # Objects are accessible if they:
+            # 1. Have load locations (zone commands, mobile equipment, etc.), OR
+            # 2. Are created by scripts/special procedures, OR
+            # 3. Are created by mobiles with special procedures
+            locations = self.get_load_locations(entity.vnum)
+            if locations:
+                return True
+            
+            # Check if it's created by special procedures or scripts
+            if self._is_script_created_object(entity.vnum):
+                return True
+                
+            return False
+        elif entity.entity_type == "mobile":
+            # Mobiles are accessible if they appear in zone M commands
+            for zone_num in self.zones:
+                zone_data = self.world.load_zone(zone_num)
+                if not zone_data or "cmds" not in zone_data:
+                    continue
+                
+                for cmd in zone_data["cmds"]:
+                    if not isinstance(cmd, dict):
+                        continue
+                    
+                    cmd_type = cmd.get("cmd", "")
+                    arg1 = safe_int(cmd.get("arg1", 0))
+                    
+                    if cmd_type == "M" and arg1 == entity.vnum:
+                        return True
+            return False
+        else:
+            # For other entity types, assume accessible
+            return True
+    
+    def _is_script_created_object(self, vnum: int) -> bool:
+        """Check if an object is created by scripts or special procedures"""
+        # Check if any mobile with special procedures might create this object
+        mobiles = self.get_entities("mobile")
+        for mobile in mobiles.values():
+            # Check if mobile has special procedure and is accessible
+            if mobile.data.get('spec_proc') and self.is_entity_accessible(mobile):
+                # For now, assume any accessible mobile with spec_proc might create objects
+                # This could be refined with more specific analysis
+                return True
+        
+        # Check scripts for object creation patterns
+        for zone_num in self.zones:
+            script_dir = config.project_root / str(zone_num) / "script"
+            if not script_dir.exists():
+                continue
+            
+            for script_file in script_dir.iterdir():
+                if script_file.suffix != ".json":
+                    continue
+                
+                try:
+                    with open(script_file, 'r') as f:
+                        script_data = json.load(f)
+                    
+                    script_text = script_data.get('script', '')
+                    # Look for this vnum in script text
+                    if str(vnum) in script_text and ('obj_to_char' in script_text or 'obj_to_room' in script_text):
+                        return True
+                except Exception:
+                    continue
+        
+        return False
     
     def get_load_locations(self, vnum: int) -> List[Dict[str, Any]]:
         """Get all locations where an item loads"""

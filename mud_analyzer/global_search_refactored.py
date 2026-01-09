@@ -82,6 +82,11 @@ class GlobalSearch(BaseExplorer, MenuMixin):
                 # Show load locations
                 self._show_associations(entity.vnum)
                 
+                # Show accessibility status
+                is_accessible = data_service.is_entity_accessible(entity)
+                status = "✅ Accessible" if is_accessible else "❌ Inaccessible (no load locations)"
+                print(f"\n📋 Accessibility: {status}")
+                
                 print("\n0. ← Back to search results")
                 choice = input("➤ Press 0 to return: ").strip()
                 if choice == "0" or not choice:
@@ -131,17 +136,28 @@ class GlobalSearch(BaseExplorer, MenuMixin):
         if not search_term or search_term.lower() in ['back', 'b']:
             return
         
+        # Ask for accessibility filter
+        filter_choice = input("\n📋 Show only accessible items? (y/N): ").strip().lower()
+        accessible_only = filter_choice in ['y', 'yes']
+        
         try:
             print("Searching objects...")
-            self._current_results = data_service.search_entities("object", search_term)
+            self._current_results = data_service.search_entities("object", search_term, accessible_only)
             self._current_type = "object"
             
-            print(f"Found {len(self._current_results)} matches")
+            if accessible_only:
+                print(f"Found {len(self._current_results)} accessible matches")
+            else:
+                print(f"Found {len(self._current_results)} matches")
             
             if self._current_results:
-                self.display_items(f"📦 OBJECT SEARCH RESULTS: '{search_term}'", self.get_items())
+                title = f"📦 OBJECT SEARCH RESULTS: '{search_term}'"
+                if accessible_only:
+                    title += " (Accessible Only)"
+                self.display_items(title, self.get_items())
             else:
-                print(f"❌ No objects found matching '{search_term}'")
+                status = "accessible " if accessible_only else ""
+                print(f"❌ No {status}objects found matching '{search_term}'")
                 input("Press Enter to continue...")
         except Exception as e:
             log_error(f"Error searching objects: {e}")
@@ -153,17 +169,28 @@ class GlobalSearch(BaseExplorer, MenuMixin):
         if not search_term or search_term.lower() in ['back', 'b']:
             return
         
+        # Ask for accessibility filter
+        filter_choice = input("\n📋 Show only accessible mobiles? (y/N): ").strip().lower()
+        accessible_only = filter_choice in ['y', 'yes']
+        
         try:
             print("Searching mobiles...")
-            self._current_results = data_service.search_entities("mobile", search_term)
+            self._current_results = data_service.search_entities("mobile", search_term, accessible_only)
             self._current_type = "mobile"
             
-            print(f"Found {len(self._current_results)} matches")
+            if accessible_only:
+                print(f"Found {len(self._current_results)} accessible matches")
+            else:
+                print(f"Found {len(self._current_results)} matches")
             
             if self._current_results:
-                self.display_items(f"👹 MOBILE SEARCH RESULTS: '{search_term}'", self.get_items())
+                title = f"👹 MOBILE SEARCH RESULTS: '{search_term}'"
+                if accessible_only:
+                    title += " (Accessible Only)"
+                self.display_items(title, self.get_items())
             else:
-                print(f"❌ No mobiles found matching '{search_term}'")
+                status = "accessible " if accessible_only else ""
+                print(f"❌ No {status}mobiles found matching '{search_term}'")
                 input("Press Enter to continue...")
         except Exception as e:
             log_error(f"Error searching mobiles: {e}")

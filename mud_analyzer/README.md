@@ -31,11 +31,14 @@ MUD Analyzer is a comprehensive suite of tools for exploring and analyzing Addic
 - Detailed entity information with formatted display
 - Zone overview and statistics
 
-### 🔧 **Assembled Items** (Refactored)
+### 🔧 **Assembled Items** (Enhanced)
 - Analyze craftable items and requirements
 - Identify possible vs impossible assemblies
 - Component analysis with load locations
 - Success probability calculations
+- **NEW**: Script-created items analysis
+- **NEW**: Special procedure item detection
+- **NEW**: Unified view of all creatable items
 
 ### 📊 **Zone Summary**
 - Generate comprehensive zone reports
