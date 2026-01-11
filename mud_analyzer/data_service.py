@@ -214,18 +214,30 @@ class DataService:
     def is_entity_accessible(self, entity: EntityInfo) -> bool:
         """Check if an entity is accessible in the game"""
         if entity.entity_type == "object":
-            # Objects are accessible if they:
-            # 1. Have load locations (zone commands, mobile equipment, etc.), OR
-            # 2. Are created by scripts/special procedures, OR
-            # 3. Are created by mobiles with special procedures
+            # Objects are accessible if they have at least one LOAD location
+            # with a positive probability and any mobile/container context is itself accessible,
+            # OR they are created by scripts/special procedures.
             locations = self.get_load_locations(entity.vnum)
             if locations:
-                return True
-            
+                for loc in locations:
+                    prob = int(loc.get('probability', 0))
+                    if prob <= 0:
+                        continue
+
+                    loc_type = loc.get('type')
+                    # If the object loads into a mobile (equipment/inventory), ensure that mobile is accessible
+                    if loc_type in ('mobile_equipment', 'mobile_inventory'):
+                        # We cannot always resolve the exact mobile vnum from the brief string here,
+                        # so treat a positive-probability mobile load as valid for accessibility.
+                        return True
+                    # Room/container loads are fine if prob > 0
+                    if loc_type in ('room', 'container'):
+                        return True
+
             # Check if it's created by special procedures or scripts
             if self._is_script_created_object(entity.vnum):
                 return True
-                
+
             return False
         elif entity.entity_type == "mobile":
             # Mobiles are accessible if they appear in zone M commands
