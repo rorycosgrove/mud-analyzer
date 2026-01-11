@@ -9,9 +9,9 @@ import json
 from dataclasses import dataclass
 
 from mud_analyzer.core.world_lookup import World
-from mud_analyzer.config import config
-from mud_analyzer.cache_manager import cache_manager
-from mud_analyzer.error_handler import safe_int
+from mud_analyzer.shared.config import config
+from mud_analyzer.shared.cache_manager import cache_manager
+from mud_analyzer.shared.error_handler import safe_int
 
 
 @dataclass

@@ -1,0 +1,27 @@
+# World data directories
+[0-9]/
+[0-9][0-9]/
+[0-9][0-9][0-9]/
+[0-9][0-9][0-9][0-9]/
+
+# World data files
+*.zip
+world/
+src/
+quests/
+models/
+textures/
+out/
+.mud_cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUD Analyzer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .status {
+            padding: 15px 30px;
+            background: #f5f5f5;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .status-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ff6b6b;
+        }
+
+        .status-dot.connected {
+            background: #51cf66;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            min-height: 500px;
+        }
+
+        nav {
+            background: #f9f9f9;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            margin-bottom: 10px;
+        }
+
+        nav button {
+            width: 100%;
+            padding: 12px 15px;
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 5px;
+            color: #667eea;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        nav button:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        nav button.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .content {
+            padding: 30px;
+            overflow-y: auto;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            gap: 8px;
+        }
+
+        input[type="radio"] {
+            cursor: pointer;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 12px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        button.secondary {
+            background: #6c757d;
+        }
+
+        button.secondary:hover {
+            background: #5a6268;
+        }
+
+        .results {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+
+        .results-empty {
+            text-align: center;
+            color: #999;
+            padding: 40px 20px;
+        }
+
+        .result-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .result-item:hover {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .result-item h4 {
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+
+        .result-item p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: #fee;
+            color: #c00;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #fcc;
+            margin-bottom: 20px;
+        }
+
+        .success {
+            background: #efe;
+            color: #060;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #cfc;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            background: #eef;
+            color: #006;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccf;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+                max-height: 120px;
+            }
+
+            nav ul {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 10px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .status {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚔️ MUD Analyzer</h1>
+            <p>Search and analyze MUD world data</p>
+        </header>
+
+        <div class="status">
+            <div class="status-indicator">
+                <div class="status-dot" id="statusDot"></div>
+                <span id="statusText">Checking connection...</span>
+            </div>
+            <span id="apiUrl"></span>
+        </div>
+
+        <main>
+            <nav>
+                <ul>
+                    <li><button onclick="switchSection('search')" class="nav-btn active">Search</button></li>
+                    <li><button onclick="switchSection('zone')" class="nav-btn">Zone Info</button></li>
+                    <li><button onclick="switchSection('object')" class="nav-btn">Object Details</button></li>
+                    <li><button onclick="switchSection('mobile')" class="nav-btn">Mobile Details</button></li>
+                    <li><button onclick="switchSection('assemblies')" class="nav-btn">Assemblies</button></li>
+                </ul>
+            </nav>
+
+            <div class="content">
+                <!-- Search Section -->
+                <div id="search" class="section active">
+                    <h2>Search MUD World</h2>
+                    <div class="form-group">
+                        <label for="searchQuery">Search Query:</label>
+                        <input type="text" id="searchQuery" placeholder="Enter search term (e.g., sword, dragon)">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Entity Type:</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="entityType" value="all" checked> All
+                            </label>
+                            <label>
+                                <input type="radio" name="entityType" value="object"> Objects
+                            </label>
+                            <label>
+                                <input type="radio" name="entityType" value="mobile"> Mobiles
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="searchLimit">Result Limit:</label>
+                        <input type="number" id="searchLimit" value="50" min="1" max="500">
+                    </div>
+
+                    <div class="button-group">
+                        <button onclick="performSearch()">Search</button>
+                    </div>
+
+                    <div id="searchResults" class="results">
+                        <div class="results-empty">Results will appear here</div>
+                    </div>
+                </div>
+
+                <!-- Zone Info Section -->
+                <div id="zone" class="section">
+                    <h2>Get Zone Information</h2>
+                    <div class="form-group">
+                        <label for="zoneNum">Zone Number:</label>
+                        <input type="number" id="zoneNum" placeholder="Enter zone number (e.g., 30)">
+                    </div>
+
+                    <div class="button-group">
+                        <button onclick="getZoneInfo()">Get Zone Info</button>
+                    </div>
+
+                    <div id="zoneResults" class="results">
+                        <div class="results-empty">Zone information will appear here</div>
+                    </div>
+                </div>
+
+                <!-- Object Details Section -->
+                <div id="object" class="section">
+                    <h2>Get Object Details</h2>
+                    <div class="form-group">
+                        <label for="objectVnum">Object VNUM:</label>
+                        <input type="number" id="objectVnum" placeholder="Enter object VNUM (e.g., 3001)">
+                    </div>
+
+                    <div class="button-group">
+                        <button onclick="getObjectDetails()">Get Details</button>
+                    </div>
+
+                    <div id="objectResults" class="results">
+                        <div class="results-empty">Object details will appear here</div>
+                    </div>
+                </div>
+
+                <!-- Mobile Details Section -->
+                <div id="mobile" class="section">
+                    <h2>Get Mobile Details</h2>
+                    <div class="form-group">
+                        <label for="mobileVnum">Mobile VNUM:</label>
+                        <input type="number" id="mobileVnum" placeholder="Enter mobile VNUM (e.g., 3005)">
+                    </div>
+
+                    <div class="button-group">
+                        <button onclick="getMobileDetails()">Get Details</button>
+                    </div>
+
+                    <div id="mobileResults" class="results">
+                        <div class="results-empty">Mobile details will appear here</div>
+                    </div>
+                </div>
+
+                <!-- Assemblies Section -->
+                <div id="assemblies" class="section">
+                    <h2>Find Item Assemblies</h2>
+                    <div class="form-group">
+                        <label for="assemblyVnum">Object VNUM:</label>
+                        <input type="number" id="assemblyVnum" placeholder="Enter object VNUM">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assemblyLimit">Result Limit:</label>
+                        <input type="number" id="assemblyLimit" value="50" min="1" max="500">
+                    </div>
+
+                    <div class="button-group">
+                        <button onclick="findAssemblies()">Find Assemblies</button>
+                    </div>
+
+                    <div id="assemblyResults" class="results">
+                        <div class="results-empty">Assembly information will appear here</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Check API status on load
+        window.addEventListener('load', () => {
+            checkStatus();
+            setInterval(checkStatus, 30000); // Check every 30 seconds
+        });
+
+        function checkStatus() {
+            fetch('/api/status')
+                .then(r => r.json())
+                .then(data => {
+                    const dot = document.getElementById('statusDot');
+                    const text = document.getElementById('statusText');
+                    const url = document.getElementById('apiUrl');
+
+                    if (data.connected) {
+                        dot.classList.add('connected');
+                        text.textContent = 'Connected to API';
+                    } else {
+                        dot.classList.remove('connected');
+                        text.textContent = 'API unavailable';
+                    }
+                    url.textContent = data.api_url;
+                });
+        }
+
+        function switchSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function showLoading(containerId) {
+            document.getElementById(containerId).innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading...</p>
+                </div>
+            `;
+        }
+
+        function showError(containerId, error) {
+            document.getElementById(containerId).innerHTML = `<div class="error">${error}</div>`;
+        }
+
+        function performSearch() {
+            const query = document.getElementById('searchQuery').value.trim();
+            if (!query) {
+                showError('searchResults', 'Please enter a search query');
+                return;
+            }
+
+            const entityType = document.querySelector('input[name="entityType"]:checked').value;
+            const limit = parseInt(document.getElementById('searchLimit').value);
+
+            showLoading('searchResults');
+
+            fetch('/api/search', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ query, entity_type: entityType, limit })
+            })
+            .then(r => r.json())
+            .then(data => {
+                if (data.error) {
+                    showError('searchResults', data.error);
+                } else if (data.results.length === 0) {
+                    document.getElementById('searchResults').innerHTML = 
+                        `<div class="results-empty">No results found for "${query}"</div>`;
+                } else {
+                    const html = data.results.map(r => `
+                        <div class="result-item">
+                            <h4>${r.name}</h4>
+                            <p><strong>VNUM:</strong> ${r.vnum}</p>
+                            <p><strong>Zone:</strong> ${r.zone}</p>
+                            <p><strong>Type:</strong> ${r.entity_type}</p>
+                        </div>
+                    `).join('');
+                    document.getElementById('searchResults').innerHTML = html;
+                }
+            })
+            .catch(e => showError('searchResults', e.message));
+        }
+
+        function getZoneInfo() {
+            const zoneNum = document.getElementById('zoneNum').value.trim();
+            if (!zoneNum) {
+                showError('zoneResults', 'Please enter a zone number');
+                return;
+            }
+
+            showLoading('zoneResults');
+
+            fetch(`/api/zone/${zoneNum}`)
+            .then(r => r.json())
+            .then(data => {
+                if (data.error) {
+                    showError('zoneResults', data.error);
+                } else {
+                    const html = `
+                        <div class="result-item">
+                            <h4>Zone ${zoneNum}</h4>
+                            ${Object.entries(data.data).map(([k, v]) => 
+                                `<p><strong>${k}:</strong> ${v}</p>`
+                            ).join('')}
+                        </div>
+                    `;
+                    document.getElementById('zoneResults').innerHTML = html;
+                }
+            })
+            .catch(e => showError('zoneResults', e.message));
+        }
+
+        function getObjectDetails() {
+            const vnum = document.getElementById('objectVnum').value.trim();
+            if (!vnum) {
+                showError('objectResults', 'Please enter an object VNUM');
+                return;
+            }
+
+            showLoading('objectResults');
+
+            fetch(`/api/object/${vnum}`)
+            .then(r => r.json())
+            .then(data => {
+                if (data.error) {
+                    showError('objectResults', data.error);
+                } else {
+                    const html = `
+                        <div class="result-item">
+                            <h4>Object ${vnum}</h4>
+                            ${Object.entries(data.data).map(([k, v]) => 
+                                `<p><strong>${k}:</strong> ${v}</p>`
+                            ).join('')}
+                        </div>
+                    `;
+                    document.getElementById('objectResults').innerHTML = html;
+                }
+            })
+            .catch(e => showError('objectResults', e.message));
+        }
+
+        function getMobileDetails() {
+            const vnum = document.getElementById('mobileVnum').value.trim();
+            if (!vnum) {
+                showError('mobileResults', 'Please enter a mobile VNUM');
+                return;
+            }
+
+            showLoading('mobileResults');
+
+            fetch(`/api/mobile/${vnum}`)
+            .then(r => r.json())
+            .then(data => {
+                if (data.error) {
+                    showError('mobileResults', data.error);
+                } else {
+                    const html = `
+                        <div class="result-item">
+                            <h4>Mobile ${vnum}</h4>
+                            ${Object.entries(data.data).map(([k, v]) => 
+                                `<p><strong>${k}:</strong> ${v}</p>`
+                            ).join('')}
+                        </div>
+                    `;
+                    document.getElementById('mobileResults').innerHTML = html;
+                }
+            })
+            .catch(e => showError('mobileResults', e.message));
+        }
+
+        function findAssemblies() {
+            const objVnum = document.getElementById('assemblyVnum').value.trim();
+            if (!objVnum) {
+                showError('assemblyResults', 'Please enter an object VNUM');
+                return;
+            }
+
+            const limit = parseInt(document.getElementById('assemblyLimit').value);
+
+            showLoading('assemblyResults');
+
+            fetch('/api/assemblies', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ obj_vnum: objVnum, limit })
+            })
+            .then(r => r.json())
+            .then(data => {
+                if (data.error) {
+                    showError('assemblyResults', data.error);
+                } else {
+                    const html = `
+                        <div class="result-item">
+                            <h4>Assemblies for Object ${objVnum}</h4>
+                            <pre>${JSON.stringify(data.data, null, 2)}</pre>
+                        </div>
+                    `;
+                    document.getElementById('assemblyResults').innerHTML = html;
+                }
+            })
+            .catch(e => showError('assemblyResults', e.message));
+        }
+
+        // Allow Enter key to submit
+        document.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                const activeSection = document.querySelector('.section.active').id;
+                switch(activeSection) {
+                    case 'search': performSearch(); break;
+                    case 'zone': getZoneInfo(); break;
+                    case 'object': getObjectDetails(); break;
+                    case 'mobile': getMobileDetails(); break;
+                    case 'assemblies': findAssemblies(); break;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

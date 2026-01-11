@@ -1,0 +1,12 @@
+# MUD Analyzer Client Requirements
+# Core dependencies for REST and MCP clients
+
+# REST API Client
+requests>=2.31.0                # HTTP library for REST API
+
+# Optional: For LLM integration with Claude
+# Uncomment the line below if using LLM features
+# anthropic>=0.7.0
+
+# Optional: For better JSON handling
+# python-dateutil>=2.8.0

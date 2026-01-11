@@ -4,7 +4,13 @@ Configuration for MUD Analyzer API
 
 from pathlib import Path
 from typing import Optional
-from pydantic import BaseSettings
+
+try:
+    # Pydantic v2
+    from pydantic_settings import BaseSettings
+except ImportError:
+    # Pydantic v1
+    from pydantic import BaseSettings
 
 
 class Config(BaseSettings):
