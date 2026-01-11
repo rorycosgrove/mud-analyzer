@@ -11,7 +11,7 @@ from typing import List, Dict, Any
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from mud_analyzer.base_explorer import BaseExplorer, MenuMixin
+from mud_analyzer.legacy.base_explorer import BaseExplorer, MenuMixin
 from mud_analyzer.data_service import data_service
 from mud_analyzer.legacy.zone_explorer import ZoneExplorer
 

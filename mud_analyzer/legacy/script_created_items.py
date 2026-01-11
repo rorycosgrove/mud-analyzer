@@ -13,7 +13,7 @@ import re
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from mud_analyzer.base_explorer import BaseExplorer, MenuMixin
+from mud_analyzer.legacy.base_explorer import BaseExplorer, MenuMixin
 from mud_analyzer.data_service import data_service
 from mud_analyzer.shared.config import config
 from mud_analyzer.shared.error_handler import handle_errors, safe_int
