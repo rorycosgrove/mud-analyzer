@@ -23,6 +23,11 @@ def main():
     if len(argv) >= 2 and argv[0] == "--world":
         world_dir = argv[1]
         argv = argv[2:]  # Remove --world and its value from argv
+        
+        # Add world directory to sys.path so mud_analyzer can be imported
+        world_path = Path(world_dir).resolve()
+        if world_path not in [Path(p).resolve() for p in sys.path]:
+            sys.path.insert(0, str(world_path))
     
     # Set project root if world directory provided
     if world_dir:
