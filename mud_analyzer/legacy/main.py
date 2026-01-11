@@ -16,6 +16,20 @@ from mud_analyzer.shared.error_handler import handle_errors, log_error
 
 @handle_errors(show_traceback=False)
 def main():
+    # Parse --world parameter if present
+    world_dir = None
+    argv = sys.argv[1:]  # Skip script name
+    
+    if len(argv) >= 2 and argv[0] == "--world":
+        world_dir = argv[1]
+        argv = argv[2:]  # Remove --world and its value from argv
+    
+    # Set project root if world directory provided
+    if world_dir:
+        if not config.set_project_root(world_dir):
+            log_error(f"Invalid world directory: {world_dir}")
+            return
+    
     try:
         # Set working directory to project root where zone files are located
         config.setup_working_directory()
@@ -23,7 +37,7 @@ def main():
         log_error(f"Failed to setup working directory: {e}")
         return
     
-    if len(sys.argv) < 2:
+    if len(argv) < 1:
         # Launch interactive menu if no arguments
         try:
             from mud_analyzer.legacy.menu import main as menu_main
@@ -32,7 +46,7 @@ def main():
             log_error(f"Failed to launch menu: {e}")
         return
     
-    command = sys.argv[1].lower()
+    command = argv[0].lower()
     
     if command == "menu":
         from mud_analyzer.legacy.menu import main as menu_main
@@ -55,13 +69,13 @@ def main():
         try:
             from mud_analyzer.analysis.zone_summary import main as zone_summary_main
             # Remove 'summary' from args and call zone_summary
-            sys.argv = [sys.argv[0]] + sys.argv[2:]
+            sys.argv = [sys.argv[0]] + argv[1:]
             zone_summary_main()
         except Exception as e:
             log_error(f"Failed to generate zone summary: {e}")
     elif command == "assembled":
         try:
-            from mud_analyzer.assembled_items_refactored import AssembledItemsExplorer
+            from mud_analyzer.legacy.assembled_items import AssembledItemsExplorer
             explorer = AssembledItemsExplorer()
             explorer.main_menu()
         except Exception as e:
@@ -70,7 +84,7 @@ def main():
         try:
             from mud_analyzer.legacy.zone_explorer import main as explorer_main
             # Remove 'explore' from args and call explorer
-            sys.argv = [sys.argv[0]] + sys.argv[2:]
+            sys.argv = [sys.argv[0]] + argv[1:]
             explorer_main()
         except Exception as e:
             log_error(f"Failed to launch zone explorer: {e}")
@@ -93,16 +107,23 @@ def main():
 def show_help():
     print("\n🏰 MUD Analyzer - AddictMUD Zone Analysis Tools")
     print("=" * 50)
-    print("\nUsage: python mud_analyzer/main.py [command]")
+    print("\nUsage: python mud_analyzer/main.py [--world /path/to/world] [command]")
+    print("\nGlobal options:")
+    print("  --world <path>  Set world directory (auto-detected if not provided)")
     print("\nAvailable commands:")
-    print("  menu       Launch interactive menu (default)")
-    print("  browse     Browse zones")
-    print("  search     Global search for objects/mobiles")
-    print("  explore N  Explore specific zone N")
-    print("  summary N  Generate summary for zone N")
-    print("  assembled  Analyze assembled items")
-    print("  help       Show this help message")
-    print("  clear-cache Clear all caches")
+    print("  menu             Launch interactive menu (default)")
+    print("  browse           Browse zones")
+    print("  search           Global search for objects/mobiles")
+    print("  explore N        Explore specific zone N")
+    print("  summary N        Generate summary for zone N")
+    print("  assembled        Analyze assembled items")
+    print("  help             Show this help message")
+    print("  clear-cache      Clear all caches")
+    print("\nExamples:")
+    print("  python main.py                                        # Use auto-detected world")
+    print("  python main.py --world /path/to/world                # Use specific world")
+    print("  python main.py --world /path/to/world browse          # Browse specific world")
+    print("  python main.py explore 100                            # Explore zone 100")
     print("\nRun without arguments for interactive menu.")
 
 if __name__ == "__main__":

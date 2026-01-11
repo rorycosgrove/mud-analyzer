@@ -59,6 +59,16 @@ class Config:
         except (OSError, PermissionError):
             return False
     
+    def set_project_root(self, path: str) -> bool:
+        """Explicitly set project root directory (e.g., from CLI parameter)"""
+        p = Path(path).resolve()
+        if not p.exists():
+            return False
+        if not self._has_zone_directories(p):
+            return False
+        self.project_root = p
+        return True
+    
     def setup_working_directory(self):
         """Set the working directory to project root"""
         os.chdir(self.project_root)
