@@ -32,6 +32,11 @@ class DataService:
         self._zones: Optional[List[int]] = None
         self._command_index: Optional[Dict[int, List[Dict]]] = None
         self._entity_cache: Dict[str, Dict[int, EntityInfo]] = {}
+        import atexit
+        try:
+            atexit.register(self._persist_caches)
+        except Exception:
+            pass
     
     @property
     def zones(self) -> List[int]:
@@ -134,33 +139,50 @@ class DataService:
         
         print(f"Loading {entity_type} entities...")
         entities = {}
-        
+
+        # Collect all files first (fast) then load in parallel (I/O bound)
+        files = []  # list of (zone_num, entity_file_path)
         for zone_num in self.zones:
             entity_dir = config.project_root / str(zone_num) / entity_type
             if not entity_dir.exists():
                 continue
-            
+
             for entity_file in entity_dir.iterdir():
                 if entity_file.suffix != ".json":
                     continue
-                
-                try:
-                    vnum = safe_int(entity_file.stem)
-                    if vnum <= 0:
-                        continue
-                    
-                    data = self.world.load(entity_type, vnum)
-                    if data:
-                        name = self._extract_name(data, entity_type)
-                        entities[vnum] = EntityInfo(
-                            vnum=vnum,
-                            zone=zone_num,
-                            name=name,
-                            entity_type=entity_type,
-                            data=data
-                        )
-                except Exception:
-                    continue
+                files.append((zone_num, entity_file))
+
+        # Parallel load JSON files to speed up initial indexing
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+
+        def _load_one(zone_file_pair):
+            zone_num, entity_file = zone_file_pair
+            try:
+                vnum = safe_int(entity_file.stem)
+                if vnum <= 0:
+                    return None
+                data = self.world.load(entity_type, vnum)
+                if not data:
+                    return None
+                name = self._extract_name(data, entity_type)
+                return (vnum, zone_num, name, data)
+            except Exception:
+                return None
+
+        max_workers = min(8, max(2, (len(files) // 100) or 2))
+        with ThreadPoolExecutor(max_workers=max_workers) as ex:
+            futures = {ex.submit(_load_one, f): f for f in files}
+            for fut in as_completed(futures):
+                res = fut.result()
+                if res:
+                    vnum, zone_num, name, data = res
+                    entities[vnum] = EntityInfo(
+                        vnum=vnum,
+                        zone=zone_num,
+                        name=name,
+                        entity_type=entity_type,
+                        data=data
+                    )
         
         self._entity_cache[entity_type] = entities
         cache_manager.save_to_cache(cache_key, entities)
@@ -359,6 +381,16 @@ class DataService:
         
         return locations
     
+    def _persist_caches(self) -> None:
+        """Persist DataService in-memory caches to disk via cache_manager"""
+        try:
+            if self._command_index is not None:
+                cache_manager.save_to_cache("command_index", self._command_index)
+            for entity_type, entities in self._entity_cache.items():
+                cache_manager.save_to_cache(f"entities_{entity_type}", entities)
+        except Exception:
+            pass
+
     def clear_cache(self):
         """Clear all cached data"""
         self._zones = None

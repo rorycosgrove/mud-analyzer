@@ -19,8 +19,8 @@ class Config:
         self.cache_dir = Path(__file__).parent / "cache"
         self.cache_dir.mkdir(exist_ok=True)
         
-        # Cache validity period (1 hour)
-        self.cache_validity_seconds = 3600
+        # Cache validity period (1 week)
+        self.cache_validity_seconds = 7 * 24 * 3600
         
         # Pagination settings
         self.default_page_size = 10
