@@ -20,6 +20,10 @@ from __future__ import annotations
 import bisect
 import json
 from dataclasses import dataclass, field
+import atexit
+import pickle
+
+from mud_analyzer.shared.cache_manager import cache_manager
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple, List
 
@@ -40,6 +44,52 @@ class World:
     _zone_ranges: List[Tuple[int, int, int]] = field(default_factory=list)  # (start_vnum, top_vnum, zone)
     _zone_starts: List[int] = field(default_factory=list)
     _zone_index_built: bool = False
+
+    def __post_init__(self) -> None:
+        # Attempt to load cached world data to speed up lookups
+        try:
+            wc = cache_manager.load_from_cache('world_cache')
+            if isinstance(wc, dict):
+                # replace our lightweight in-memory cache
+                self._cache.update(wc)
+        except Exception:
+            pass
+
+        try:
+            zi = cache_manager.load_from_cache('world_zone_index')
+            if isinstance(zi, dict):
+                self._zone_ranges = zi.get('zone_ranges', [])
+                self._zone_starts = zi.get('zone_starts', [])
+                self._zone_index_built = bool(self._zone_ranges)
+        except Exception:
+            pass
+
+        # Register save-on-exit to persist cache state
+        try:
+            atexit.register(self._persist_caches)
+        except Exception:
+            pass
+
+    def _persist_caches(self) -> None:
+        """Persist internal caches to disk via cache_manager"""
+        try:
+            # Save world load cache (small lookup cache)
+            try:
+                cache_manager.save_to_cache('world_cache', dict(self._cache))
+            except Exception:
+                pass
+
+            # Save zone index
+            try:
+                zi = {
+                    'zone_ranges': self._zone_ranges,
+                    'zone_starts': self._zone_starts
+                }
+                cache_manager.save_to_cache('world_zone_index', zi)
+            except Exception:
+                pass
+        except Exception:
+            pass
 
     def set_hint_zone(self, zone: Optional[int]) -> None:
         self.hint_zone = zone
